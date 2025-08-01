@@ -1,0 +1,57 @@
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #002b45;
+  text-align: center;
+}
+
+.terms-container .date {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.terms-container section {
+  margin-bottom: 25px;
+}
+
+.terms-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #004766;
+}
+
+.terms-container p {
+  margin: 0 0 10px;
+}
+
+.terms-container ul {
+  margin: 10px 0 10px 20px;
+  padding-left: 20px;
+}
+
+.terms-container li {
+  list-style-type: disc;
+}
+
+.terms-container a {
+  color: #00c2ff;
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,212 @@
+/* ProposalTemplate.css */
+
+.proposal-template-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    padding: 40px;
+    background-color: #f8faff; /* Light background similar to image */
+    font-family: Arial, sans-serif; /* Or your preferred font */
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    max-width: 1200px;
+    margin: 40px auto; /* Center the container */
+    position: relative; /* For positioning the bottom button */
+}
+
+.left-section {
+    flex: 2; /* Takes more space */
+    padding-right: 40px;
+    min-width: 300px; /* Ensures it doesn't get too small */
+}
+
+.left-section h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.left-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.template-feature {
+    display: flex;
+    align-items: flex-start; /* Align text to top if multiline */
+    margin-bottom: 25px;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.icon-box svg {
+    width: 24px;
+    height: 24px;
+    color: white; /* Icon color */
+}
+
+.icon-design {
+    background-color: #5d9cec; /* Blue */
+}
+
+.icon-save {
+    background-color: #4CAF50; /* Green */
+}
+
+.icon-lightning {
+    background-color: #f4b400; /* Yellow/Orange */
+}
+
+.template-feature p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 1.1em;
+    color: #444;
+}
+
+.template-feature p strong {
+    font-weight: bold;
+}
+
+.right-section {
+    flex: 1; /* Takes less space */
+    min-width: 300px; /* Ensures it doesn't get too small */
+    padding-left: 40px;
+    display: flex;
+    justify-content: center; /* Center the signature box */
+    align-items: flex-start; /* Align to top */
+}
+
+.signature-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 100%; /* Occupy available space */
+    max-width: 350px; /* Limit max width */
+}
+
+.signature-box .company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signature-box .submitted-by-label {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.signature-box .signer-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.signature-box .signer-company {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.signature-image-placeholder {
+    height: 100px; /* Adjust height as needed for signature */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.signature-image-placeholder svg {
+    width: 150px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.signature-line {
+    border-bottom: 2px dashed #ccc;
+    width: 80%; /* Width of the dashed line */
+    margin-top: 10px; /* Space between signature and line */
+}
+
+.bottom-action {
+    width: 100%; /* Span full width */
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    padding-top: 30px; /* Space from content above */
+}
+
+.amazing-button {
+    background-color: #00223f; /* Dark blue from the button */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.amazing-button:hover {
+    background-color: #00335c; /* Slightly lighter on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .proposal-template-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .left-section {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .right-section {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .signature-box {
+        max-width: 400px; /* Allow wider signature box on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .left-section h1 {
+        font-size: 1.8em;
+    }
+
+    .left-section p,
+    .template-feature p {
+        font-size: 1em;
+    }
+
+    .amazing-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .bottom-action {
+        justify-content: center; /* Center button on very small screens */
+    }
+}

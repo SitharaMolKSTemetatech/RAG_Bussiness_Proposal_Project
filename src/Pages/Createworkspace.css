@@ -1,0 +1,112 @@
+/* Overall container for centering and background */
+.create-workspace-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it takes full viewport height */
+  /* Background image and properties */
+  background: url('../../assets/background.jpg') no-repeat center center/cover;
+  font-family: 'Poppins', sans-serif; /* Changed font family to Poppins */
+  padding: 30px; /* Add some padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Card containing the form */
+.workspace-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 15px; /* Rounded corners for the card */
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  text-align: left;
+  max-width: 600px; /* Increased max-width to give more horizontal space */
+  width: 100%; /* Make it responsive */
+  box-sizing: border-box;
+}
+
+.workspace-card h1 {
+  font-size: 1.8rem; /* Heading size */
+  color: #333333; /* Darker text color */
+  margin-bottom: 10px;
+  font-weight: 700; /* Bold heading */
+}
+
+.workspace-card p {
+  font-size: 1rem; /* Paragraph text size */
+  color: #666666; /* Lighter text color */
+  margin-bottom: 30px;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 20px; /* Space between input fields */
+  position: relative; /* For positioning the suffix */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px; /* Rounded input fields */
+  box-sizing: border-box;
+  color: #333333; /* Input text color */
+}
+
+.input-group input::placeholder {
+  color: #a0a0a0; /* Placeholder color */
+}
+
+/* Specific styling for the subdomain input group */
+.subdomain-group {
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+  margin-bottom: 30px; /* More space before the button */
+  border: none;
+  background-color: transparent;
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  /* Removed gap here, spacing handled by margin-right on input */
+}
+
+.subdomain-group input {
+  flex-grow: 1; /* Allows input to take available space */
+  border: 1px solid #e0e0e0; /* Apply border back to the input */
+  border-radius: 8px; /* Apply border-radius back to the input */
+  padding: 15px; /* Ensure consistent padding */
+  height: 50px; /* Explicitly set height for consistency */
+  background-color: #ffffff; /* White background for the input */
+  min-width: 0; /* Allow input to shrink if necessary without pushing suffix */
+  margin-right: 10px; /* Added margin to create space between input and suffix */
+}
+
+.subdomain-suffix {
+  border: none;
+  padding: 0; /* Removed all padding to make it as compact as possible */
+  font-size: 1rem;
+  color: #666666; /* Suffix text color */
+  white-space: nowrap; /* Prevent text wrapping */
+  height: 50px; /* Explicitly set height to match input */
+  display: flex;
+  align-items: center; /* Vertically center the text within its height */
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevent suffix from shrinking */
+}
+
+/* Continue button styling */
+.workspace-card button {
+  width: 100%;
+  padding: 15px;
+  /*background-color: #007bff;*/ /* Blue button color */
+   background-color: #00223f;
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 8px; /* Rounded button */
+  font-size: 1.1rem;
+  font-weight: 600; /* Semi-bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workspace-card button:hover {
+ /* background-color: #0056b3;*/ /* Darker blue on hover */
+ background-color: #00335c; /* Slightly lighter on hover */
+}

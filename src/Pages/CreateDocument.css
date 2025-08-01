@@ -1,0 +1,219 @@
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4faff;
+}
+
+.doc-container {
+  display: flex; /* This will make the sidebar and main content sit side-by-side */
+  height: 100vh;
+  background-color: #f4faff;
+}
+
+/* Left Sidebar Icons (now just 'sidebar') */
+.sidebar { /* This will be the dark icon strip */
+  width: 90px;
+ /* background-color: #002a3a;*/
+ background-color: #00223f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.sidebar-icons { /* This div remains within 'sidebar' to organize icons */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 30px; /* Increased font-size for bigger icons */
+  margin-top: 20px;
+}
+
+/* Sidebar Button Panel (NEW CLASS: 'sidebar-panel') */
+.sidebar-panel { /* This will be the wider light blue panel */
+  width: 220px; /* Fixed width as per image */
+  background-color: #f0faff;
+  padding: 1.5rem 1rem;
+  border-radius: 0 20px 20px 0; /* Adjusted border-radius for the right edge */
+  display: flex;
+  flex-direction: column;
+  /* Removed justify-content: space-between; so feedback button isn't pushed down */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05); /* Optional: add a subtle shadow to separate from main content */
+}
+
+
+/* New Document Button (inside sidebar-panel) */
+.new-doc-btn {
+  background-color: #002a3a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+/* Sidebar Menu Options */
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #002a3a;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none; /* For react-router Link */
+}
+
+.menu-btn:hover {
+  background-color: #c6f3ff;
+  border-radius: 20px;
+}
+
+.menu-btn.active {
+  background-color: #a5efff;
+  
+  border-radius: 20px;
+}
+
+/* Feedback Button */
+.feedback-btn {
+  margin-top: 30px; /* Add some space below trash, adjust as needed */
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #002a3a;
+  text-decoration: none; /* For react-router Link */
+  display: flex; /* To center content if needed */
+  justify-content: center; /* To center content if needed */
+  align-items: center; /* To center content if needed */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1; /* Allows main content to take up remaining space */
+  padding: 2rem 3rem;
+  background-color: #f4faff;
+  position: relative;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #d9efff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #002a3a;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.empty-state img {
+  max-width: 100px; /* This makes the image smaller. Adjust value as desired. */
+  height: auto; /* Ensures the image maintains its aspect ratio. */
+  margin-bottom: 20px;
+}
+
+.empty-state h2 {
+  color: #002a3a;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.main-new-doc-btn {
+  background-color: #002a3a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Status Filters */
+.status-filters {
+  position: absolute;
+  bottom: 20px;
+  /* Adjust left based on total sidebar width (90px + 220px = 310px) */
+  left: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.status-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  padding: 6px 14px;
+  cursor: pointer;
+  color: #002a3a;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+  text-decoration: none; /* For react-router Link */
+}
+
+.status-btn.selected,
+.status-btn:hover {
+/* background-color:white;*/
+background-color: #a5efff;
+}
+.sidebar-icon-link {
+  color: white;
+}
+
+.sidebar-icon-link:hover {
+  color: #a5efff; /* Optional: hover effect */
+}
