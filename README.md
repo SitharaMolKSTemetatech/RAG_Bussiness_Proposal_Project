@@ -1,0 +1,2 @@
+# RAG_Bussiness_Proposal_Project
+frontend
